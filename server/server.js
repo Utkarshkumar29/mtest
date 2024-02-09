@@ -10,9 +10,12 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/data',async(req,res)=>{
-    console.log('inside')
     try {
-        res.json(data)
+        if(!data){
+            res.status(404).json("Data doesn't exist")
+        }else{
+            res.status(200).json(data)
+        }
     } catch (error) {
         console.log("Error saending the data to the client",error)
     }
