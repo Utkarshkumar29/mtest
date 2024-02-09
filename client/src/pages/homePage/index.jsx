@@ -25,7 +25,7 @@ const HomePage=()=>{
     const cellStyle={
         border: '2px solid black',
         padding: "10px",
-        textAlign:'center'
+        textAlign:'left'
     }
 
     useEffect(()=>{
