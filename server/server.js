@@ -22,5 +22,5 @@ app.get('/data',async(req,res)=>{
 })
 
 app.listen(4000,()=>{
-    console.log("Connected to the server at 4000")
+    console.log("Connected to server at 4000")
 })
